@@ -166,7 +166,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   painter: ProgressPainter(
                     completedPercentage: cigaraManager.getdayPercentage,
                     circleWidth: 15,
-                    defaultCircleColor: Colors.lightGreen,
+                    defaultCircleColor: Colors.lightBlue,
                     percentageCompletedCircleColor:
                         Colors.grey.withOpacity(0.2),
                   ),

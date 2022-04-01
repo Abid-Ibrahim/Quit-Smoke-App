@@ -9,7 +9,7 @@ import 'package:intl/intl.dart';
 import 'package:quitsmoke/notification_manager.dart';
 import 'package:quitsmoke/screens/splash_screen.dart';
 import 'package:quitsmoke/theme.dart';
-import 'package:timezone/data/latest.dart' as tz;
+import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
 void main() async {

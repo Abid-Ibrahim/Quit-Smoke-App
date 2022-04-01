@@ -50,13 +50,7 @@ class ProgressPainter extends CustomPainter {
         false,
         getShadowPaint(percentageCompletedCircleColor.withAlpha(50)));
 
-    /*    canvas.drawArc(
-        Rect.fromLTRB(
-            marginLeft, 5, marginRight, getProportionateScreenHeight(250)),
-        pi * 1 / 2,
-        pi,
-        false,
-        progressCirclePaint); */
+
 
     double arcAngle = 1.4 * pi * (completedPercentage / 100);
     canvas.drawArc(Rect.fromCircle(center: center, radius: radius), pi * 4 / 5,

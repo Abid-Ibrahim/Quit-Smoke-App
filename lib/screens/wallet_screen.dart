@@ -262,7 +262,7 @@ class _WalletScreenState extends State<WalletScreen> {
                   IconButton(
                     icon: Icon(
                       _details ? Icons.arrow_drop_up : Icons.arrow_drop_down,
-                      size: getProportionateScreenWidth(26),
+                      size: getProportionateScreenWidth(28),
                     ),
                     onPressed: () {
                       _details = !_details;
@@ -279,7 +279,7 @@ class _WalletScreenState extends State<WalletScreen> {
               child: Container(
                 padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                    color: Colors.green[700],
+                    color: Colors.teal[700],
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(22),
                         topRight: Radius.circular(22)),
