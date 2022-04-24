@@ -60,7 +60,7 @@ class _ProgressPageState extends State<ProgressPage> {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black,
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
