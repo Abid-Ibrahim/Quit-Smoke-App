@@ -161,7 +161,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   labelText: langs[lang]["welcome"]["howmanyperday"],
                   fillColor: Colors.white,
                   border: new OutlineInputBorder(
-                    borderRadius: new BorderRadius.circular(25.0),
+                    borderRadius: new BorderRadius.circular(50.0),
                     borderSide: new BorderSide(),
                   ),
 
@@ -180,7 +180,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   labelText: langs[lang]["welcome"]["howmuchpercigcost"],
                   fillColor: Colors.white,
                   border: new OutlineInputBorder(
-                    borderRadius: new BorderRadius.circular(25.0),
+                    borderRadius: new BorderRadius.circular(50.0),
                     borderSide: new BorderSide(),
                   ),
                   //fillColor: Colors.green
@@ -257,12 +257,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
               if (!starting)
                 AvatarGlow(
-                  glowColor: Colors.blue,
+                  glowColor: Colors.lightGreenAccent,
                   endRadius: 180.0,
                   duration: Duration(milliseconds: 2000),
                   repeat: true,
-                  showTwoGlows: false,
-                  repeatPauseDuration: Duration(milliseconds: 100),
+                  showTwoGlows: true,
+                  repeatPauseDuration: Duration(milliseconds: 10),
                   child: ElevatedButton(
                     child: Text(langs[lang]["welcome"]["start"]),
                     onPressed: () => _startNow(),

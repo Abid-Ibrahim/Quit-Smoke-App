@@ -166,7 +166,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   painter: ProgressPainter(
                     completedPercentage: cigaraManager.getdayPercentage,
                     circleWidth: 15,
-                    defaultCircleColor: Colors.lightBlue,
+                    defaultCircleColor: Colors.red,
                     percentageCompletedCircleColor:
                         Colors.grey.withOpacity(0.2),
                   ),
@@ -226,7 +226,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 buildCategoryCard(sc, context,
                     color: Colors.green,
-                    icon: Icons.account_balance_wallet,
+                    icon: Icons.account_balance_wallet_rounded,
                     text: "${langs[lang]["home"]["wallet"]}",
                     id: "wallet", onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (_) {

@@ -120,7 +120,6 @@ class SnappableState extends State<Snappable>
     );
   }
 
-  /// I am... INEVITABLE      ~Thanos
   Future<void> snap() async {
     //get image from child
     final fullImage = await _getImageFromWidget();
@@ -173,7 +172,6 @@ class SnappableState extends State<Snappable>
     _animationController.forward();
   }
 
-  /// I am... IRON MAN   ~Tony Stark
   void reset() {
     setState(() {
       _layers = null;
@@ -255,7 +253,6 @@ class SnappableState extends State<Snappable>
       (1000 * math.exp(-(math.pow((value - center), 2) / 0.14))).round();
 }
 
-/// This is slow! Run it in separate isolate
 List<Uint8List> _encodeImages(List<image.Image> images) {
   return images.map((img) => Uint8List.fromList(image.encodePng(img))).toList();
 }
