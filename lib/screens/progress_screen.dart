@@ -143,9 +143,9 @@ class _ProgressPageState extends State<ProgressPage> {
                                           htimes[i]["time"]),
                                       circleWidth: 10,
                                       defaultCircleColor:
-                                          Colors.lightGreenAccent,
+                                          Colors.lightBlueAccent,
                                       percentageCompletedCircleColor:
-                                          Colors.grey),
+                                          Colors.white70),
                                 ),
                               ),
                             ),

@@ -150,6 +150,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: buildAppBar(context),
       body: Column(
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(
@@ -165,7 +166,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 CustomPaint(
                   painter: ProgressPainter(
                     completedPercentage: cigaraManager.getdayPercentage,
-                    circleWidth: 15,
+                    circleWidth: 13,
                     defaultCircleColor: Colors.red,
                     percentageCompletedCircleColor:
                         Colors.grey.withOpacity(0.2),
@@ -349,7 +350,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Expanded(child: SizedBox.shrink()),
           buildBottom(),
           SizedBox(
-            height: getProportionateScreenHeight(25),
+            height: getProportionateScreenHeight(9),
           )
         ],
       ),
@@ -359,6 +360,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Row buildBottom() {
     int days = cigaraManager.calculatePassedTime().inDays;
     return Row(
+      mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -368,6 +370,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
+
                 width: getProportionateScreenWidth(days > 100
                     ? 3
                     : days > 10
@@ -403,6 +406,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Column buildDayItem({int count, bool checked, bool current}) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -421,13 +425,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: Theme.of(context).backgroundColor,
                   ),
         SizedBox(
-          height: 4,
+          height: getProportionateScreenHeight(4),
         ),
         Container(
           padding: EdgeInsets.all(getProportionateScreenWidth(12)),
           decoration: BoxDecoration(
               borderRadius:
-                  BorderRadius.circular(getProportionateScreenWidth(24)),
+                  BorderRadius.circular(100),
               color: checked ? Colors.lightGreen : Colors.grey[100],
               boxShadow: [
                 BoxShadow(
@@ -454,10 +458,10 @@ class _HomeScreenState extends State<HomeScreen> {
       child: SizedBox(
         width: getProportionateScreenWidth(222),
         child: Container(
-          height: getProportionateScreenHeight(150),
+          height: getProportionateScreenHeight(159),
           padding: EdgeInsets.all(getProportionateScreenWidth(20)),
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(5),
               border: Border.all(
                 color: Theme.of(context).primaryIconTheme.color,
               ),
@@ -476,6 +480,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
+
                     width: getProportionateScreenWidth(150),
                     child: AutoSizeText(
                       title,
@@ -512,17 +517,17 @@ class _HomeScreenState extends State<HomeScreen> {
       onTap: onTap,
       child: Ink(
         padding: EdgeInsets.symmetric(
-            horizontal: 10, vertical: getProportionateScreenHeight(15)),
+            horizontal: 10, vertical: getProportionateScreenHeight(10)),
         decoration: BoxDecoration(
             border: Border.all(
               color: Theme.of(context).primaryIconTheme.color,
             ),
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(70),
             color: Theme.of(context).backgroundColor,
             boxShadow: [
               BoxShadow(
-                  color: Colors.white,
-                  blurRadius: 15,
+                  color: Colors.blueGrey,
+                  blurRadius: 1,
                   offset: Offset(-4, -4),
                   spreadRadius: 1.0),
             ]),

@@ -126,7 +126,7 @@ class _ReasonScreenState extends State<ReasonScreen> {
           scaffoldState.currentState.showBottomSheet((context) => Container(
                 padding: EdgeInsets.all(15),
                 color: Colors.white,
-                height: getProportionateScreenHeight(250),
+                height: getProportionateScreenHeight(300),
                 width: double.infinity,
                 child: Column(children: [
                   Text(
@@ -136,7 +136,8 @@ class _ReasonScreenState extends State<ReasonScreen> {
                         .headline4
                         .copyWith(fontSize: getProportionateScreenWidth(22)),
                   ),
-                  Divider(),
+                  Divider(
+                  ),
                   TextField(
                     onChanged: (value) => newReason = value,
                     maxLines: 3,

@@ -94,7 +94,6 @@ class _GuideScreenState extends State<GuideScreen> {
                             child: Icon(Icons.search),
                           ),
 
-                          //fillColor: Colors.green
                         ),
                       ),
                     ),
