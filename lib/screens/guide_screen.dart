@@ -263,7 +263,7 @@ class PreventCard extends StatelessWidget {
                   height: 136,
                   width: SizeConfig.screenWidth * .8,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(10),
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(

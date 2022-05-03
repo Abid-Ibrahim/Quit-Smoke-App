@@ -183,7 +183,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     borderRadius: new BorderRadius.circular(50.0),
                     borderSide: new BorderSide(),
                   ),
-                  //fillColor: Colors.green
+
                 ),
               ),
               SizedBox(

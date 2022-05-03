@@ -9,7 +9,7 @@ const Map langs = {
     ],
     "progressDescription": {
       "1":
-          "Your blood pressure and heart rate will start to return to normal levels.",
+          "Your blood pressure and heart rate will return to normal.",
       "2": "Your carbon monoxide levels will return to a normal level",
       "3": "Your risk of heart attack will decrease.",
       "4": "You will notice that you smell and taste better than before.",
