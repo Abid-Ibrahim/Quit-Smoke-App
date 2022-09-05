@@ -69,12 +69,3 @@ class Cigaratte {
     return daylist;
   }
 }
-
-/* void main() {
-  Cigaratte cigara = Cigaratte(
-      dailyCigarattes: 20,
-      pricePerCigaratte: 12,
-      startDate: DateTime.now().subtract(Duration(days: 0, seconds: 500)));
-  print(cigara.upcomingEvent);
-}
- */
